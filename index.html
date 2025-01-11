@@ -8,45 +8,52 @@
 </head>
 <body>
 
-    <div class="header">
-        <div class="field-logo">
-            <img class="logo" src="/images/logonew.png" alt="website's logo"> <span>Freedom</span>
-        </div>
-        <div class="menu">
-            <ul>
-                <li>Home</li>
-                <li >Prévias</li>
-                <li>Contato</li>
-                <li>Quem somos</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="box-loguin">
-        <div class="loguin">
-            <div class="welcome">
-                <h2>Bem vindo</h2>
+    <div class="super-container">
+        
+        <div class="header">
+            <div class="field-logo">
+                <img class="logo" src="/images/logonew.png" alt="website's logo"> 
             </div>
-
-            <form class="field-input">
-                <label for="email">E-mail</label>
-                <input class="input-local" type="text" placeholder="Digite seu e-mail" required>
-                <label for="password">Senha</label>
-                <input  class="input-local" type="password" placeholder="Digite sua senha" required>
-
-                <button type="submit" class="send">Entrar</button>
-            </form>
-
-
-            
-
-            
-            <a style="color:#34344A;" href="#"><p>Esqueci a senha</p></a>
-            <p>Não tem uma conta? <a style="color:#34344A;" href="#">crie aqui</a></p>
+            <div class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Prévias</li>
+                    <li>Contato</li>
+                    <li>Quem somos</li>
+                </ul>
+            </div>
         </div>
-
     
+        <div class="box-loguin">
+            <div class="loguin">
+                <div class="welcome">
+                    <h2>Bem vindo</h2>
+                </div>
+    
+                <form class="field-input">
+                    <div class="push-date">
+                        <label for="email">E-mail</label>
+                        <input class="input-local" type="text" placeholder="Digite seu e-mail" >
+                        <label for="password">Senha</label>
+                        <input  class="input-local" type="password" placeholder="Digite sua senha" >
+                    </div>
+                    
+                    <p id="mensage"></p>
+                    <button type="submit" class="send">Entrar</button>
+                </form>
+    
+    
+                
+    
+                
+                <a style="color:#34344A;" href="#"><p>Esqueci a senha</p></a>
+                <p>Não tem uma conta? <a style="color:#34344A;" href="#">crie aqui</a></p>
+            </div>
+    
+        
+        </div>
     </div>
-    
+
+    <script src="index.js"></script>
 </body>
 </html>

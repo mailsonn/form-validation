@@ -6,12 +6,17 @@
     box-sizing: border-box;
 }
 
-body{
-    width: 1440px;
-    height: 1024px;
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.super-container{
     background-image: url(/images/carBackground.jpg);
     background-position: center;
     background-size:cover;
+
 }
 
 .header{
@@ -22,37 +27,42 @@ body{
 }
 
 .field-logo{
+    flex: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   flex-wrap: nowrap;
-   margin-left: 5%;
+    flex-wrap: nowrap;
+    margin-left: 5%;
 }
 .logo{
-    flex: 10%;
     width: 140px;
     height: 149px;
 }
 
-span{
-    font-family: "Poppins", serif;
-    font-size: 24px;
-    font-style: italic;
-}
-
 .menu{
-    flex: 60%;
+    flex: 80%;
     justify-content: space-around;
     font-family: "Poppins", serif;
     font-weight: 700;
     font-style: normal;
     font-size: 24px;
     color: #34344A;
+    margin-right: 5%;
+}
+
+li{
+    list-style-type: none;
+    margin-right: 16px;
+    border-bottom: solid 4px transparent;
+    padding: 2px;
 }
 
 ul li:hover{
+
     border-bottom: solid 4px #34344A;
+    border-radius: 10%;
+ 
 }
 
 ul{
@@ -61,12 +71,6 @@ ul{
     justify-content: end;
     margin-right: 16px;
     cursor: pointer;
-}
-
-li{
-    list-style-type: none;
-    margin-right: 16px;
-    border-bottom: solid 4px transparent;
 }
 
 #down-row{
@@ -81,7 +85,6 @@ li{
     display: flex;
     justify-content: center;
     align-items:center;
-
 }
 
 .loguin{
@@ -123,7 +126,9 @@ h2{
     height: 159px;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
@@ -145,22 +150,26 @@ label{
     border-top: none;
     border-right: none;
     border-left: none;
+    width: 100%;
+    outline: none;
+
+}
+.input-local[type="password"]{
+    outline: none;
+
+
 }
 
-
 .send{
-    position: relative;
-    margin-top: 1rem;
-    margin-right: 50%;
-    margin-left: 50%;
+    margin-top: 1.5rem;
     background-color: #FB5607;
     width: 170px;
     height: 58px;
     border-radius: 20px;
+    border: none;
     font-family: "Poppins", serif;
     font-size: 36px;
     font-weight: bold;
-    border: none;
     color: #FFFFFF;
     box-shadow: 0 4px 4px #DAD7CD;
     cursor: pointer;
@@ -184,3 +193,5 @@ p{
 p:last-of-type{
     margin-top: 16px;
 }
+
+.mensage{}
