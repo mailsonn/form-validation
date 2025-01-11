@@ -25,3 +25,17 @@ areaInputs.forEach(input => {
         mensage.style.visibility = 'hidden'; // Esconde a mensagem ao focar no input
     });
 });
+
+//negar form
+let form = document.querySelector('#form');
+let isValid = true;
+
+form.addEventListener('submit', function(){
+    areaInputs.forEach(input =>{
+        if(input === ""){
+            event.preventDefault();
+            
+        }
+    })
+    
+})
