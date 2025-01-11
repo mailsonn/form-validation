@@ -16,6 +16,7 @@ send.addEventListener('click', function () {
     });
 });
 
+/*
 // Adiciona evento 'focus' a cada input
 areaInputs.forEach(input => {
     input.addEventListener('focus', function () {
@@ -38,4 +39,6 @@ form.addEventListener('submit', function(){
         }
     })
     
-})
+});
+
+*/
