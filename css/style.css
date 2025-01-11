@@ -185,7 +185,7 @@ p{
     margin-top: 2rem;
     color:#34344A;
     font-family: "Poppins", serif;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 200;
     font-style: italic;
 }
@@ -194,4 +194,19 @@ p:last-of-type{
     margin-top: 16px;
 }
 
-.mensage{}
+#mensage{
+    visibility: hidden;
+    font-size: 16px;
+    color: red;
+}
+
+.texts{
+    margin-top: 2rem;
+    height: 5rem;
+    width:20rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 0;
+    align-items: center;
+}
