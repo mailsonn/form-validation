@@ -23,7 +23,6 @@ html, body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .field-logo{
@@ -49,6 +48,11 @@ html, body{
     font-size: 24px;
     color: #34344A;
     margin-right: 5%;
+}
+
+.ocult-menu{
+    display: none;
+    width: 48px;
 }
 
 li{
@@ -97,8 +101,6 @@ ul{
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    
-   
 }
 
 .welcome{
@@ -111,8 +113,6 @@ ul{
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 4px #DAD7CD;
-  
-    
 }
 
 h2{

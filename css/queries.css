@@ -1,0 +1,67 @@
+@media (max-width:768px) {
+    .header{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .field-logo{
+        flex:40%;
+
+
+    }
+    .logo{
+   
+        width:130px;
+        height: 130px;
+    }
+
+    .ocult-menu{
+        display: flex;
+        flex: 50%;
+        width:95px;
+        height: 70px;
+    }
+    
+    .menu {
+        display: none;
+    }
+
+    .loguin{
+        width: 400px;
+        height: 400px;
+    }
+    .welcome{
+        width: 260px;
+        height: 65px;
+    }
+    .field-input{
+        width: 85%;
+        height: 100px;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    label{
+        font-size: 18px;
+        font-family: "Poppins", serif;
+    }
+
+    input{
+        font-family: "Poppins", serif;
+        font-size: 16px;
+    }
+    .send{
+        margin-top: 1.5rem;
+        background-color: #FB5607;
+        width: 100px;
+        height: auto;
+        border-radius: 15px;
+        font-size: 22px;
+    }
+    
+    p{
+        margin-top: 5rem;
+        font-family: "Poppins", serif;
+        font-size: 16px;
+    }
+}
