@@ -35,7 +35,7 @@ form.addEventListener('submit', (event) => {
 
       if(!inputField){
         event.preventDefault(); 
-        alert('por favor, preencha os dados');
+        
       }
     })
     
