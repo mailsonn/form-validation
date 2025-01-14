@@ -13,7 +13,7 @@ html, body{
 }
 
 .super-container{
-    background-image: url(/images/carBackground.jpg);
+    background-image: url(../images/carBackground.jpg);
     background-position: center;
     background-size:cover;
 
@@ -142,7 +142,7 @@ label{
 }
 
 
-.input-local{
+input{
     font-family: "Poppins", serif;
     font-size: 24px;
     font-weight: bold;
@@ -195,7 +195,7 @@ p:last-of-type{
 }
 
 #mensage{
-    visibility: hidden;
+    visibility:hidden;
     font-size: 16px;
     color: red;
 }

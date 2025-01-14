@@ -1,27 +1,42 @@
-let areaInputs = document.querySelectorAll('input'); // NodeList de inputs
-let send = document.querySelector('.send');
-let mensage = document.querySelector('#mensage');
+let input = document.querySelectorAll('.input-local');
+let button = document.querySelector('.send');
+let mensage = document.querySelector('#mensage'); 
 
-send.addEventListener('click', function () {
-    areaInputs.forEach(input => { // Itera sobre cada input
-        if (input.value === "") {
-            input.style.border = '1px solid red'; // Aplica o estilo ao input individual
-            input.style.backgroundColor = '#f3acac';
-            mensage.style.visibility = 'visible'; // Mostra a mensagem
+// Validação ao clicar no botão
+button.addEventListener('click', function () {
+    input.forEach((item) => {
+        if (item.value === "") {
+            item.style.backgroundColor = "red";
+            mensage.style.visibility = 'visible'; 
         } else {
-            input.style.border = '1px solid white';
-            input.style.borderBottom = '2px solid #737380';
-            input.style.backgroundColor = 'white';
+            item.style.backgroundColor = 'white'; 
         }
     });
 });
 
-// Adiciona evento 'focus' a cada input
-areaInputs.forEach(input => {
-    input.addEventListener('focus', function () {
-        input.style.border = '1px solid white';
-        input.style.backgroundColor = 'white';
-        input.style.borderBottom = '2px solid #737380';
-        mensage.style.visibility = 'hidden'; // Esconde a mensagem ao focar no input
+
+//take off styles
+input.forEach((item) => {
+    item.addEventListener('click', function () {
+        input.forEach((inputItem) => {
+            inputItem.style.backgroundColor = "white"; 
+            mensage.style.visibility = 'hidden'
+        });
     });
 });
+
+//avoid send form
+
+let form = document.querySelector('.field-input');
+
+form.addEventListener('submit', (event) => {
+    input.forEach((item) => {
+      let inputField =  item.value.trim()
+
+      if(!inputField){
+        event.preventDefault(); 
+        alert('por favor, preencha os dados');
+      }
+    })
+    
+})
